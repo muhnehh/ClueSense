@@ -1,0 +1,231 @@
+[![Cluely AI](https://tse4.mm.bing.net/th/id/OIP.ih6PmUQ1AO5B2kkRaJJyiQHaEI?r=0\&pid=Api)](https://dessign.net/cluely-ai/)
+
+Absolutely! Here's a comprehensive front-end development prompt tailored for creating a landing page for your startup, LILO, inspired by the design aesthetics and structure of Cluely's website. This prompt includes detailed specifications to guide you in replicating Cluely's style while incorporating LILO's unique features.
+
+---
+
+## 🎯 LILO – AI-Powered Internship Simulator
+
+**Page Title:**
+`LILO – AI-Powered Internship Simulator`
+
+**Hero Section:**
+
+* **Headline:**
+  `"Launch Your Data Science Career with AI-Driven Internships"`
+
+* **Subheadline:**
+  `"Experience simulated internships at top tech companies, guided by AI mentors and human experts."`
+
+* **Call to Action:**
+  `"Start Your Internship Journey"`
+
+* **Background Image:**
+  `An engaging image of a virtual workspace with AI elements.`
+
+**Section 1: How It Works**
+
+* **Title:**
+  `"Transform Your Learning Experience"`
+
+* **Content:**
+  `LILO combines AI-driven simulations with real-world mentorship to provide a comprehensive learning environment:`
+
+  * **AI-Powered Internship Simulations:**
+    `Engage in realistic projects modeled after roles at FAANG and MAANG companies.`
+
+  * **Personalized Learning Paths:**
+    `Tailored curriculum and mock data generated to match your learning pace and goals.`
+
+  * **Mentorship Support:**
+    `Access to AI mentors trained on trusted datasets and human experts for guidance.`
+
+  * **Real-Time Feedback:**
+    `Receive instant evaluations and suggestions to improve your skills.`
+
+**Section 2: Features**
+
+* **Title:**
+  `"Comprehensive Tools for Your Success"`
+
+* **Content:**
+  `LILO offers a suite of features to enhance your learning journey:`
+
+  * **Curriculum Aligned with Industry Standards:**
+    `Stay updated with an AI-focused curriculum reflecting current industry trends.`
+
+  * **Mock Internships Across Various Companies:**
+    `Experience simulated roles at both top-tier and mid-sized companies.`
+
+  * **AI-Generated Mock Data:**
+    `Work with realistic datasets tailored to your learning objectives.`
+
+  * **Human Mentor Assistance:**
+    `Get support from experienced mentors when AI guidance isn't sufficient.`
+
+  * **Custom AI CV Reviews:**
+    `Receive personalized feedback on your CV based on industry standards.`
+
+**Section 3: Outcomes**
+
+* **Title:**
+  `"Achieve Your Career Goals"`
+
+* **Content:**
+  `With LILO, you can:`
+
+  * **Prepare for Global Opportunities:**
+    `Build skills relevant to top tech companies worldwide.`
+
+  * **Enhance Your Portfolio:**
+    `Showcase completed projects and simulations to potential employers.`
+
+  * **Receive Certification:**
+    `Earn a Certificate of Completion to validate your achievements.`
+
+  * **Access to Exclusive Resources:**
+    `Utilize AI tools and human mentorship to refine your skills.`
+
+**Section 4: Testimonials**
+
+* **Title:**
+  `"Hear from Our Users"`
+
+* **Content:**
+  `Include quotes and success stories from individuals who have benefited from LILO.`
+
+**Section 5: Pricing**
+
+* **Title:**
+  `"Flexible Pricing Plans"`
+
+* **Content:**
+  `Offer various subscription tiers to cater to different needs:`
+
+  * **Free Plan:**
+    `Basic access with limited features.`
+
+  * **Pro Plan:**
+    `Full access to all features with additional benefits.`
+
+  * **Enterprise Plan:**
+    `Custom solutions for organizations and educational institutions.`
+
+**Footer:**
+
+* **Links:**
+  `About Us | Careers | Privacy Policy | Terms of Service`
+
+* **Social Media Icons:**
+  `Links to LILO's social media profiles.`
+
+* **Contact Information:**
+  `Email address and phone number for inquiries.`
+
+---
+
+**Tech Stack:**
+
+* **Frontend:**
+
+  * `HTML5, CSS3, JavaScript`
+  * `React.js` for building user interfaces
+  * `Tailwind CSS` for utility-first styling
+
+* **Backend:**
+
+  * `Node.js` with `Express.js` for server-side logic
+  * `MongoDB` for database management
+
+* **Authentication:**
+
+  * `JWT (JSON Web Tokens)` for secure authentication
+  * `OAuth 2.0` for third-party login integrations
+
+* **AI Integration:**
+
+  * `OpenAI GPT-4` for AI mentor capabilities
+  * `Custom-trained models` using `TensorFlow` or `PyTorch`
+
+* **Deployment:**
+
+  * `Docker` for containerization
+  * `AWS EC2` or `Heroku` for hosting
+  * `GitHub Actions` for CI/CD pipelines
+
+**Design Aesthetics:**
+
+* **Font Style:**
+
+  * `Primary Font: 'Inter'` for clean and modern typography
+  * `Secondary Font: 'Roboto'` for readability and versatility
+
+* **Color Scheme:**
+
+  * `Primary: #4CAF50 (Green)` for a fresh and energetic feel
+  * `Secondary: #2196F3 (Blue)` for trust and professionalism
+  * `Accent: #FFC107 (Amber)` for highlights and call-to-action buttons
+
+* **Layout:**
+
+  * `Responsive design using Flexbox and Grid`
+  * `Card-based UI for features and testimonials`
+  * `Sticky navigation bar for easy access`
+
+**Additional Features:**
+
+* **Interactive Elements:**
+
+  * `Hover effects on buttons and links`
+  * `Modal windows for detailed information`
+
+* **Accessibility:**
+
+  * `Keyboard navigable`
+  * `Screen reader support`
+  * `High contrast mode for better visibility`
+
+* **SEO Optimization:**
+
+  * `Meta tags for social media sharing`
+  * `Structured data for rich snippets`
+
+**Performance Optimization:**
+
+* **Lazy Loading:**
+
+  * `Images and videos to improve page load times`
+
+* **Code Splitting:**
+
+  * `Using React's lazy and Suspense for efficient loading`
+
+* **Caching:**
+
+  * `Service workers for offline capabilities`
+
+* **Image Optimization:**
+
+  * `Using WebP format for faster loading`
+
+**Security Measures:**
+
+* **Data Encryption:**
+
+  * `SSL/TLS for secure data transmission`
+
+* **Input Validation:**
+
+  * `Sanitizing user inputs to prevent XSS and SQL Injection`
+
+* **Rate Limiting:**
+
+  * `Implementing to prevent DDoS attacks`
+
+* **Regular Audits:**
+
+  * `Conducting security audits and penetration testing`
+
+---
+
+This prompt provides a structured approach to creating a Replit page that effectively communicates the value of LILO to potential users, with a focus on technical details and design aesthetics.
