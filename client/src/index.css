@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 0%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 0%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 0%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(0, 0%, 0%);
+  --accent: hsl(210, 40%, 98%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --ring: hsl(207, 90%, 54%);
+  --radius: 0.5rem;
+  --lilo-black: hsl(0, 0%, 0%);
+  --lilo-blue: hsl(207, 90%, 54%);
+  --lilo-gray: hsl(0, 0%, 12%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 12%);
+  --muted-foreground: hsl(215, 16%, 65%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 0%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 12%);
+  --input: hsl(0, 0%, 12%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 12%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(0, 0%, 12%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --ring: hsl(207, 90%, 54%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .lilo-gradient-bg {
+    background: linear-gradient(135deg, hsl(207, 90%, 97%) 0%, hsl(260, 90%, 97%) 50%, hsl(270, 90%, 97%) 100%);
+  }
+  
+  .code-editor {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .text-lilo-black {
+    color: var(--lilo-black);
+  }
+  
+  .text-lilo-blue {
+    color: var(--lilo-blue);
+  }
+  
+  .bg-lilo-black {
+    background-color: var(--lilo-black);
+  }
+  
+  .bg-lilo-blue {
+    background-color: var(--lilo-blue);
+  }
+  
+  .border-lilo-blue {
+    border-color: var(--lilo-blue);
+  }
+  
+  .ring-lilo-blue {
+    --tw-ring-color: var(--lilo-blue);
+  }
+}
