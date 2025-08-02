@@ -1,53 +1,70 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Check, Star } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { DodoButton } from '@/components/ui/dodo-button';
+import { AnimatedElement, StaggeredContainer } from '@/components/ui/animated-elements';
+import { Check, Star, Zap, Crown, Building, Sparkles } from 'lucide-react';
+import { useState } from 'react';
 
 export default function PricingSection() {
+  const [isAnnual, setIsAnnual] = useState(false);
+  
   const plans = [
     {
       name: 'Starter',
       price: '$0',
       description: 'Perfect for getting started',
+      icon: Zap,
+      color: 'dodo-green',
       features: [
         '1 company simulation',
         'Basic AI mentorship',
         'Progress tracking',
-        'CV review (basic)'
+        'CV review (basic)',
+        'Community access'
       ],
       buttonText: 'Get Started Free',
-      buttonVariant: 'outline' as const,
+      buttonVariant: 'secondary' as const,
       popular: false
     },
     {
       name: 'Professional',
-      price: '$49',
+      price: isAnnual ? '$39' : '$49',
       period: 'per month',
       description: 'Most popular choice',
+      icon: Crown,
+      color: 'dodo-blue',
       features: [
         'All company simulations',
         'Advanced AI mentorship',
         'Human mentor access',
         'Mock interviews',
         'Detailed CV analysis',
-        'Priority support'
+        'Priority support',
+        'Career roadmap'
       ],
       buttonText: 'Start Pro Trial',
-      buttonVariant: 'default' as const,
+      buttonVariant: 'gradient' as const,
       popular: true
     },
     {
       name: 'Enterprise',
       price: 'Custom',
       description: 'For institutions',
+      icon: Building,
+      color: 'dodo-purple',
       features: [
         'Unlimited simulations',
         'Custom company programs',
         'Dedicated mentors',
         'Analytics dashboard',
-        'API access'
+        'API access',
+        'White-label solution',
+        'Custom integrations'
       ],
       buttonText: 'Contact Sales',
-      buttonVariant: 'outline' as const,
+      buttonVariant: 'electric' as const,
+      popular: false
+    }
+  ];
       popular: false
     }
   ];

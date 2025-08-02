@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { apiRequest } from '@/lib/queryClient';
 
@@ -33,36 +33,60 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-24 bg-lilo-black text-white">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold mb-6 text-dodo-dark"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           Ready to launch your career?
-        </h2>
-        <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Join thousands of students who've already started their journey with LILO.
-        </p>
+        </motion.h2>
+        <motion.p 
+          className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-normal"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          Join thousands of students who've already started their journey with DODO.
+        </motion.p>
         
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
-          <Input
+        <motion.form 
+          onSubmit={handleSubmit} 
+          className="max-w-lg mx-auto flex flex-col sm:flex-row gap-3"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <input
             type="email"
-            placeholder="Enter your email"
+            placeholder="Enter your email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 px-6 py-4 rounded-full text-gray-900 border-gray-300 focus:ring-lilo-blue focus:border-lilo-blue"
+            className="dodo-input flex-1 text-sm"
             required
           />
-          <Button 
+          <motion.button 
             type="submit"
             disabled={isSubmitting}
-            className="bg-lilo-blue text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+            className="dodo-button-primary flex items-center space-x-2"
+            whileHover={{ y: -1 }}
+            whileTap={{ scale: 0.98 }}
           >
-            {isSubmitting ? 'Subscribing...' : 'Get Started'}
-          </Button>
-        </form>
+            <span>{isSubmitting ? 'Joining...' : 'Get Started'}</span>
+            <ArrowRight className="w-4 h-4" />
+          </motion.button>
+        </motion.form>
         
-        <p className="text-sm text-gray-400 mt-4">
+        <motion.p 
+          className="text-sm text-gray-500 mt-4 font-normal"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           Start with a free account. No credit card required.
-        </p>
+        </motion.p>
       </div>
     </section>
   );

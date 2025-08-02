@@ -88,15 +88,17 @@ export default function SkillsAssessment() {
                   <p className="text-gray-600 mb-6">
                     Get a comprehensive analysis of your technical skills and interview readiness.
                   </p>
-                  <Button 
+                                  <div className="text-center">
+                  <Button
                     onClick={handleStartAssessment}
                     disabled={isAssessing}
-                    className="bg-lilo-blue hover:bg-blue-700"
+                    size="lg"
+                    className="btn-primary-visible"
                   >
                     {isAssessing ? (
                       <>
                         <Clock className="w-4 h-4 mr-2 animate-spin" />
-                        Assessing...
+                        Analyzing...
                       </>
                     ) : (
                       <>
@@ -105,6 +107,7 @@ export default function SkillsAssessment() {
                       </>
                     )}
                   </Button>
+                </div>
                 </div>
               ) : (
                 <>
