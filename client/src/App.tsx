@@ -12,9 +12,12 @@ import LaunchingSoon from "@/components/launching-soon";
 function AppRouter() {
   return (
     <Switch>
+      <Route path="/ClueSense" component={Home} />
+      <Route path="/ClueSense/" component={Home} />
+      <Route path="/ClueSense/launching-soon" component={LaunchingSoon} />
       <Route path="/" component={Home} />
       <Route path="/launching-soon" component={LaunchingSoon} />
-      <Route component={NotFound} />
+      <Route component={Home} />
     </Switch>
   );
 }
