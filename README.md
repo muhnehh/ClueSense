@@ -3,7 +3,8 @@
 **Live site hosted on GitHub Pages.**  
 This repository contains the static website and assets for the DODO AI internship simulator landing page (simulations, mentorship, pricing, sprint program). Use this README to run, edit, and deploy the site on GitHub Pages.
 
----
+<img width="3240" height="3240" alt="vibe-code-camp-mune (1)" src="https://github.com/user-attachments/assets/8f5d5c90-b234-4734-bad4-86931cef9694" />
+
 
 ## Quick links
 
