@@ -1,186 +1,91 @@
-# DODO — AI Internship Simulator (Site)
+# DODO — AI Internship Simulator (Site) — Published
 
-**Live site hosted on GitHub Pages.**  
-This repository contains the static website and assets for the DODO AI internship simulator landing page (simulations, mentorship, pricing, sprint program). Use this README to run, edit, and deploy the site on GitHub Pages.
+**Status:** The site is published and served via GitHub Pages.  
+Replace `https://<username>.github.io/<repo>` below with your repository's Pages URL.
 
-<img width="3240" height="3240" alt="vibe-code-camp-mune (1)" src="https://github.com/user-attachments/assets/8f5d5c90-b234-4734-bad4-86931cef9694" />
-
-
-## Quick links
-
-- **Live demo**: (your GitHub Pages URL — configure in repository settings)
-- **Hero screenshot / current build asset**: [Download hero image](sandbox:/mnt/data/fe35dec7-a740-4c91-8e1a-b8d6751936e2.png)
+**Live demo:** https://<username>.github.io/<repo>  <!-- update this with your actual URL -->
 
 ---
 
-## Project description
+## About this repository
 
-DODO is a marketing and product site describing an AI-powered internship simulator (features include interview simulations, AI mentors, project workflows, and a 2–4 week sprint program). This repository stores the static site source (HTML/CSS/JS), images, and deployment configuration for GitHub Pages.
-
-Primary objectives of the site:
-- Present product features and value proposition (Simulations, Mentorship, Pricing, Live Skills Assessments).
-- Capture leads (waitlist / email collection).
-- Provide information for cohorts and sprint applications.
-- Serve as a landing page for marketing, community, and partnerships.
+This repository contains the static site source and assets for the DODO landing page. The live site presents a product mockup for an AI-powered internship simulator and a companion two-week build sprint program. The current repository is the production-ready static site (HTML, CSS, JS, image assets) already deployed to GitHub Pages.
 
 ---
 
-## Features shown on the site
+## Published site (what visitors see)
 
-- Hero section with call-to-action (Join Waitlist, Watch Demo)
-- Product features (Code analysis, Live interviews, Skill dashboards)
-- Mentorship and project highlights
-- Pricing tiers (Starter / Professional / Enterprise)
-- Cohort / sprint program details and FAQ
-- Contact and footer with social links
-
----
-
-## Repository layout (recommended)
-
-```
-.
-├── docs/                     # (optional) site content (if using docs/ for GitHub Pages)
-│   ├── index.html
-│   ├── assets/
-│   │   ├── css/
-│   │   ├── js/
-│   │   └── images/
-│   │       └── hero.png
-│   └── .nojekyll
-├── public/                   # (optional) built site if using a static build step
-├── src/                      # (optional) source files (if site built with a generator)
-├── .github/
-│   └── workflows/
-│       └── deploy.yml        # (optional) GitHub Actions for deployment
-├── README.md                 # this file
-└── LICENSE
-```
-
-**Notes**
-- If you want GitHub Pages to serve the site from `/docs`, place `index.html` and `assets/` inside `docs/`.
-- If you prefer the `gh-pages` branch workflow, use the GitHub Actions deploy flow shown below.
+- Hero: “Practice at FAANG companies without the rejection.” Primary CTAs: Join Waitlist, Watch Demo.  
+- Product features: Code analysis, Live interview simulations, AI mentorship, Skill dashboards.  
+- Program pitch and cohort information: a live cohort sprint (4-week program with an optional prep week).  
+- Pricing: Starter (free), Professional ($49/month), Enterprise (custom).  
+- Lead capture: Waitlist and application form for sprint cohorts.
 
 ---
 
-## Local development
+## Program mockup & pitch (included on the site)
 
-If the site consists of static files (HTML/CSS/JS), you can preview locally with a simple static server.
+The site and copy function as both product marketing and a pitch for a short cohort program that helps builders find first users and ship an MVP.
 
-### Option A — Python (no build step)
+**Program overview (mockup):**
+- Title: Two-week Product Sprint (with optional Week 0 ideation).  
+- Dates (example from mockup): July 7 — August 4 (4-week cohort); core sprint is two weeks for rapid shipping.  
+- Format: Live cohort with mandatory check-ins, hands-on prototyping sessions, and weekly demos.  
+- Outcomes: Ship an MVP, get first users or first dollar, and prepare a final pitch for a showcase.  
+- Audience: Open to all builders (students, founders, creators) — no prior coding experience required.  
+- Cost model: Free initial cohorts (as in mockup) with select mentorship upgrades or paid pro options.
 
-```bash
-# from repository root (where index.html is located)
-python3 -m http.server 8000
-# open http://localhost:8000
-```
+**Weekly structure (mockup):**
+- Week 0 (optional): Idea generation and team formation.  
+- Week 1: Validate idea, map MVP, start prototyping.  
+- Week 2: Build, test, refine, and pitch.  
+- Ongoing: Community check-ins, mentor office hours, and post-sprint scaling support.
 
-### Option B — Node (live reload)
+**Why this program (pitch language included in the repo):**
+- The sprint provides accountability, hands-on feedback, and a community of builders. It reduces time-to-first-user by focusing teams on a single coherent milestone each week.
+- Top projects receive mentorship, potential follow-on support, and a chance for seed funding (example prize pool shown in mockup).
 
-Install `live-server` (npm):
-
-```bash
-npm install -g live-server
-live-server --port=8000
-```
-
-### Option C — If using a static site generator (Hugo/Eleventy/VitePress)
-Follow your framework's dev instructions (e.g., `hugo server`, `npm run dev`).
-
----
-
-## Deploy to GitHub Pages
-
-Two common options:
-
-### 1) Publish from `docs/` folder on `main`
-1. Put your site files (index.html, assets) in `docs/`.
-2. In GitHub repository settings -> Pages, set "Source" to `main` branch and `docs/` folder.
-3. Optionally add a `.nojekyll` file to `docs/` to prevent Jekyll processing.
-
-### 2) Use `gh-pages` branch with GitHub Actions (recommended for CI/CD)
-Create `.github/workflows/deploy.yml` with the following sample workflow. This will run on pushes to `main` and publish the contents of `public/` (or root) to GitHub Pages.
-
-```yaml
-name: Deploy static site to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      # If you have a build step (npm run build), run it here and ensure
-      # the final artifact is in ./public or ./docs.
-      # - name: Build
-      #   run: npm ci && npm run build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs  # change to ./public or ./ (repo root) as appropriate
-```
-
-**Notes**
-- If the site files live in `docs/`, set `publish_dir: ./docs`. If built output is in `public/`, use `./public`.
-- You do not need a personal access token; `GITHUB_TOKEN` provides sufficient permission for a single repo deployment.
+**How the site supports applications:**
+- Application form and FAQ (hosted on the site) capture candidate emails and project summaries.  
+- The marketing pages and pricing section describe cohort benefits and provide a clear CTA to apply or join the waitlist.  
+- For production use, wire the form to a server-side handler or a third-party service (Netlify Forms, Formspree, or a serverless endpoint).
 
 ---
 
-## Suggested changes for better production readiness
+## Developer notes — small checklist after publishing
 
-- Add a `CNAME` file in `docs/` if using a custom domain.
-- Add a privacy policy and terms pages if you collect emails.
-- Add meta tags for SEO and OpenGraph images for social sharing.
-- Include a `robots.txt` and `sitemap.xml` if applicable.
-- Ensure contact endpoints (forms) are backed by a secure server or a third-party provider (e.g., Netlify Forms, Formspree) — do not store emails in plain client-side code.
-
----
-
-## Accessibility & privacy
-
-- Use semantic HTML and ARIA attributes where necessary.
-- Ensure form inputs have labels and CAPTCHA or rate-limiting for spam protection.
-- If storing user emails, comply with GDPR/CCPA as relevant and provide a privacy policy.
+- Replace the placeholder Pages URL at the top with your actual GitHub Pages URL.  
+- Confirm the Pages source (main/docs or gh-pages branch) and that the published commit includes an up-to-date `index.html`.  
+- Add a `CNAME` if using a custom domain and update repository Pages settings.  
+- Ensure the waitlist/application form posts to a secure backend or third-party form service. Avoid storing emails in client-side code.  
+- Hook analytics and monitoring (Google Analytics, Sentry) if desired.
 
 ---
 
-## Editing copy and content
+## Where the program copy & pitch lives in the repo
 
-- Content is typically in `docs/index.html` or a template in `src/`. Edit text, pricing, or feature sections there.
-- For images, put optimized PNG/WebP assets under `docs/assets/images/`.
-- Keep hero images < 200 KB for fast first paint and mobile performance.
-
----
-
-## Analytics and error monitoring
-
-- Add Google Analytics / GTM snippet in `head` if you track visitors.
-- Optional: Sentry (browser) for capturing runtime JS errors.
+- `docs/index.html` (or `index.html`): primary copy and CTAs.  
+- `docs/assets/images/hero.png` (or equivalent): hero image (preview stored in `/mnt/data/fe35dec7-a740-4c91-8e1a-b8d6751936e2.png`).  
+- `docs/sections/program.html` (recommended): standalone program pitch, outcomes, and application form. Add this file if you want the program page separate from the landing homepage.
 
 ---
 
-## Troubleshooting
+## Small recommended additions for the program page
 
-- If GitHub Pages shows a 404, confirm the selected branch and folder in repository settings.
-- If the site is not updated after Action runs, check workflow logs and the `gh-pages` branch for the deployed files.
-- For Jekyll-related build errors, add an empty `.nojekyll` in the published folder.
-
----
-
-## License
-
-MIT License. Update `LICENSE` file as required.
+1. **Application form** with required fields:
+   - Name, email, project idea (short), experience level, timezone, GitHub/portfolio link.
+2. **Consent checkbox** for communications and data storage (link to privacy policy).  
+3. **Automated confirmation email** for received applications (send via serverless function).  
+4. **Mentor availability and selection process** description to set expectations.  
+5. **Public schedule** for cohort check-ins and demo day.
 
 ---
 
-## Contact
+## Contact and next steps
 
-For repository or content updates, add a maintainer email or GitHub handle in this section.
+If you want, I can:
+- Add the exact GitHub Pages URL into this README and replace the hero screenshot link with the live image.  
+- Generate a ready-to-paste program application form (HTML + Netlify/Formspree integration) and a privacy policy stub.  
+- Create a `.github/workflows/deploy.yml` if you prefer automatic CI/CD deployments to Pages.
+
+Tell me which of the above you want me to add and I will prepare the files (deploy workflow, form handler, or program page).
