@@ -1,91 +1,108 @@
-# DODO — AI Internship Simulator (Site) — Published
+# DODO - AI-Powered Internship Simulator
 
-**Status:** The site is published and served via GitHub Pages.  
-Replace `https://<username>.github.io/<repo>` below with your repository's Pages URL.
+[![Vibe Code Camp](https://img.shields.io/badge/Built%20at-Vibe%20Code%20Camp-orange)](https://openeconomy.xyz/vibecodecamp)
 
-**Live demo:** https://<username>.github.io/<repo>  <!-- update this with your actual URL -->
+## Overview
+
+DODO is an innovative AI-powered platform designed to simulate real-world internships at top tech companies like Google, Meta, Microsoft, Netflix, and Amazon (FAANG). It provides aspiring developers and students with hands-on experience in coding challenges, system design, behavioral interviews, and mentorship—without the risk of rejection. By leveraging AI mentors, mock data, and realistic project environments, DODO helps users build genuine skills, track progress, and prepare for actual FAANG interviews.
+
+Built during the [Vibe Code Camp](https://openeconomy.xyz/vibecodecamp) program, this prototype demonstrates a full-stack internship matcher and simulator. It focuses on core features like interactive coding sessions (e.g., implementing an LRU Cache), AI-driven feedback, progress dashboards, and simulated live interviews.
+
+**Tagline:** Practice at FAANG companies without the rejection.
+
+## Key Features
+
+- **AI-Powered Simulations**: Dive into authentic internship tasks, such as Google SWE projects on data structures and algorithms, with timed challenges and mock data.
+- **AI Mentorship**: Get instant, personalized feedback on code, optimizations, and explanations. Ask questions via voice or text—e.g., "How do I optimize this sorting algorithm?"
+- **Code Analysis & Feedback**: Real-time evaluation of time complexity (e.g., O(n log n) for quicksort), code quality scores (up to 92%), and improvement suggestions.
+- **Progress Dashboard**: Track skills in Data Structures & Algorithms (e.g., 92%), System Design (85%), and Behavioral Interviews (91%). Monitor projects completed, mentorship hours (42h+), and interview readiness (94%).
+- **Live Interview Simulations**: Practice with AI interviewers trained on FAANG questions, scoring sessions (e.g., 8.5/10), and detailed debriefs.
+- **Real Projects & Undetectable Skills**: Work on production-ready features mirroring real internships. Skills developed are genuine—no fake experience, just confidence for resumes and interviews.
+- **CV Review & Career Tools**: Upload your resume for AI analysis, get career roadmaps, and join a community of builders.
+- **Flexible Pricing Tiers**: Free Starter plan, $49/month Professional (with human mentors), and custom Enterprise options.
+
+DODO adapts to your learning style, ensuring undetectable, real-world competence that shines in actual hiring processes.
+
+## Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript (with potential integrations like Chart.js for dashboards).
+- **Backend/Logic**: Simulated with Python (e.g., for LRU Cache implementation) and AI APIs for mentorship.
+- **Deployment**: Hosted on GitHub Pages for easy access to the demo landing page.
+- **AI Integration**: Conceptual use of tools like Grok or similar for code analysis and voice assistance.
+- **Other Tools**: Voice recognition for queries, progress tracking with local storage.
+
+This MVP was prototyped rapidly using AI coding tools (e.g., Bolt, v0) to focus on user acquisition and validation.
+
+## Getting Started
+
+This is a static demo hosted on GitHub Pages. No setup required—just view the live site!
+
+1. **View the Demo**: Visit [your-username.github.io/dodo](https://your-username.github.io/dodo) (replace with your actual repo URL).
+2. **Interact with Features**:
+   - Try the LRU Cache challenge: Implement the `put` method in the provided class.
+   - Ask the AI Mentor: "What's the time complexity issue in my get method?"
+   - Simulate an interview: Walk through a system design question.
+3. **Join the Waitlist**: Sign up via the form to get updates on full launch.
+4. **Run Locally** (if forking):
+   - Clone the repo: `git clone https://github.com/your-username/dodo.git`
+   - Open `index.html` in a browser.
+   - For interactive code: Use the embedded editor (e.g., Monaco or CodeMirror).
+
+**Note**: Full interactivity (e.g., AI responses, test running) requires backend integration—currently simulated for demo purposes.
+
+## Screenshots
+
+*(Add your actual screenshots here—e.g., upload to repo and link)*
+
+- ![Landing Page](screenshots/landing.png) – Hero section with "Join Waitlist" CTA.
+- ![Coding Challenge](screenshots/lru-cache.png) – Active Google SWE simulation with 3/5 tests passing.
+- ![Progress Dashboard](screenshots/dashboard.png) – Skill progress and achievements.
+- ![Pricing](screenshots/pricing.png) – Monthly vs. Annual plans.
+
+## Roadmap
+
+- **Short-Term**: Integrate real AI APIs for mentorship (e.g., OpenAI for code review).
+- **Medium-Term**: Add user authentication, save progress to backend (e.g., Firebase).
+- **Long-Term**: Launch mobile app, partner with more companies, and offer certified badges.
+
+Inspired by the Vibe Code Camp ethos: Turn ideas into reality in 2 weeks, validate with users, and ship MVPs that get traction.
+
+## Contributing
+
+Contributions welcome! This started as a Vibe Code Camp project, but let's make it better:
+
+1. Fork the repo.
+2. Create a feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit changes (`git commit -m 'Add amazing feature'`).
+4. Push to branch (`git push origin feature/amazing-feature`).
+5. Open a Pull Request.
+
+Focus areas: Bug fixes in simulations, new challenge additions, UI polish.
+
+## Authors & Acknowledgments
+
+- **Lead Builder**: [Your Name] – Led the 4-week build sprint to ship DODO, wrote the spec, sketched flows, and planned MVP as part of Vibe Code Camp.
+- **Program**: [Vibe Code Camp](https://openeconomy.xyz/vibecodecamp) – A free 4-week cohort (July 7 – August 4, 2025) for idea validation, MVP building, and user acquisition. No coding experience required—emphasis on community feedback and shipping.
+- **Mentors & Community**: Shoutout to Vibe Code Camp team for weekly check-ins, resource drops, and 1:1 guidance.
+
+## License
+
+This project is open-source under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Contact & Socials
+
+- **Demo**: [Live Site](https://your-username.github.io/dodo)
+- **Twitter**: [@dodo_internships](https://twitter.com/dodo_internships) (placeholder—update with real)
+- **LinkedIn**: [DODO Simulations](https://linkedin.com/company/dodo-simulations)
+- **GitHub**: [Issues & Stars Welcome](https://github.com/your-username/dodo/issues)
+- **Discord**: Join the builder community [here](https://discord.gg/dodo-builders)
+- **Email**: hello@dodo-sim.com (or your contact)
+
+Ready to launch your career? **Join the Waitlist** and turn simulations into reality!
+
+<img width="3240" height="3240" alt="vibe-code-camp-mune (1)" src="https://github.com/user-attachments/assets/77ddf7a5-2cba-4839-8a6c-958fd47b6aad" />
+
 
 ---
 
-## About this repository
-
-This repository contains the static site source and assets for the DODO landing page. The live site presents a product mockup for an AI-powered internship simulator and a companion two-week build sprint program. The current repository is the production-ready static site (HTML, CSS, JS, image assets) already deployed to GitHub Pages.
-
----
-
-## Published site (what visitors see)
-
-- Hero: “Practice at FAANG companies without the rejection.” Primary CTAs: Join Waitlist, Watch Demo.  
-- Product features: Code analysis, Live interview simulations, AI mentorship, Skill dashboards.  
-- Program pitch and cohort information: a live cohort sprint (4-week program with an optional prep week).  
-- Pricing: Starter (free), Professional ($49/month), Enterprise (custom).  
-- Lead capture: Waitlist and application form for sprint cohorts.
-
----
-
-## Program mockup & pitch (included on the site)
-
-The site and copy function as both product marketing and a pitch for a short cohort program that helps builders find first users and ship an MVP.
-
-**Program overview (mockup):**
-- Title: Two-week Product Sprint (with optional Week 0 ideation).  
-- Dates (example from mockup): July 7 — August 4 (4-week cohort); core sprint is two weeks for rapid shipping.  
-- Format: Live cohort with mandatory check-ins, hands-on prototyping sessions, and weekly demos.  
-- Outcomes: Ship an MVP, get first users or first dollar, and prepare a final pitch for a showcase.  
-- Audience: Open to all builders (students, founders, creators) — no prior coding experience required.  
-- Cost model: Free initial cohorts (as in mockup) with select mentorship upgrades or paid pro options.
-
-**Weekly structure (mockup):**
-- Week 0 (optional): Idea generation and team formation.  
-- Week 1: Validate idea, map MVP, start prototyping.  
-- Week 2: Build, test, refine, and pitch.  
-- Ongoing: Community check-ins, mentor office hours, and post-sprint scaling support.
-
-**Why this program (pitch language included in the repo):**
-- The sprint provides accountability, hands-on feedback, and a community of builders. It reduces time-to-first-user by focusing teams on a single coherent milestone each week.
-- Top projects receive mentorship, potential follow-on support, and a chance for seed funding (example prize pool shown in mockup).
-
-**How the site supports applications:**
-- Application form and FAQ (hosted on the site) capture candidate emails and project summaries.  
-- The marketing pages and pricing section describe cohort benefits and provide a clear CTA to apply or join the waitlist.  
-- For production use, wire the form to a server-side handler or a third-party service (Netlify Forms, Formspree, or a serverless endpoint).
-
----
-
-## Developer notes — small checklist after publishing
-
-- Replace the placeholder Pages URL at the top with your actual GitHub Pages URL.  
-- Confirm the Pages source (main/docs or gh-pages branch) and that the published commit includes an up-to-date `index.html`.  
-- Add a `CNAME` if using a custom domain and update repository Pages settings.  
-- Ensure the waitlist/application form posts to a secure backend or third-party form service. Avoid storing emails in client-side code.  
-- Hook analytics and monitoring (Google Analytics, Sentry) if desired.
-
----
-
-## Where the program copy & pitch lives in the repo
-
-- `docs/index.html` (or `index.html`): primary copy and CTAs.  
-- `docs/assets/images/hero.png` (or equivalent): hero image (preview stored in `/mnt/data/fe35dec7-a740-4c91-8e1a-b8d6751936e2.png`).  
-- `docs/sections/program.html` (recommended): standalone program pitch, outcomes, and application form. Add this file if you want the program page separate from the landing homepage.
-
----
-
-## Small recommended additions for the program page
-
-1. **Application form** with required fields:
-   - Name, email, project idea (short), experience level, timezone, GitHub/portfolio link.
-2. **Consent checkbox** for communications and data storage (link to privacy policy).  
-3. **Automated confirmation email** for received applications (send via serverless function).  
-4. **Mentor availability and selection process** description to set expectations.  
-5. **Public schedule** for cohort check-ins and demo day.
-
----
-
-## Contact and next steps
-
-If you want, I can:
-- Add the exact GitHub Pages URL into this README and replace the hero screenshot link with the live image.  
-- Generate a ready-to-paste program application form (HTML + Netlify/Formspree integration) and a privacy policy stub.  
-- Create a `.github/workflows/deploy.yml` if you prefer automatic CI/CD deployments to Pages.
-
-Tell me which of the above you want me to add and I will prepare the files (deploy workflow, form handler, or program page).
+*© 2025 DODO. Built with ❤️ during Vibe Code Camp. All rights reserved.*
