@@ -5,7 +5,7 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
   // Set base for GitHub Pages deployment
-  base: process.env.NODE_ENV === 'production' ? '/ClueSense/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/dodo/' : '/',
   plugins: [
     react(),
     ...(process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined
