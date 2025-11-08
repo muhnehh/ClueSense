@@ -4,6 +4,8 @@
 
 ## Overview
 
+<img width="1616" height="1383" alt="pika-1754159567096-1x" src="https://github.com/user-attachments/assets/b999da4c-e676-4015-87a5-06aee2676bfb" />
+
 **DODO** lets you **practice real FAANG internships** — Google, Meta, Microsoft, Netflix, Amazon — **without rejection** 😎  
 AI mentors, live coding, mock data, system design, interviews… everything you need to **launch your tech career**!
 
