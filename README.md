@@ -12,7 +12,7 @@ AI mentors, live coding, mock data, system design, interviews… everything you 
 Built in **4 weeks** during **[Vibe Code Camp](https://openeconomy.xyz/vibecodecamp)** — from idea to MVP to live demo!  
 **No coding experience required** — just hustle, feedback, and shipping 💪
 
-> **Live Demo**: [https://muhnehh.github.io/ClueSense/](https://muhnehh.github.io/ClueSense/) 🌐
+> **Live Demo**: [https://muhnehh.github.io/dodo/](https://muhnehh.github.io/dodo/) 🌐
 
 ---
 
@@ -47,7 +47,7 @@ Built in **4 weeks** during **[Vibe Code Camp](https://openeconomy.xyz/vibecodec
 
 **No setup. Just click and build!**
 
-👉 **Try it now**: [https://muhnehh.github.io/ClueSense/](https://muhnehh.github.io/ClueSense/)
+👉 **Try it now**: [https://muhnehh.github.io/dodo/](https://muhnehh.github.io/dodo/)
 
 ### What you can do:
 - Solve **LRU Cache** (3/5 tests passing) 🧩  
@@ -88,7 +88,7 @@ Built in **4 weeks** during **[Vibe Code Camp](https://openeconomy.xyz/vibecodec
 Love DODO? Help make it better!
 
 ```bash
-git clone https://github.com/muhnehh/ClueSense.git
+git clone https://github.com/muhnehh/dodo.git
 # Build something awesome → Open a PR!
 ```
 
